@@ -773,11 +773,14 @@ function Footer() {
           <div>
             <h4 className="font-semibold text-sm mb-4 text-white/80 uppercase tracking-wider">Company</h4>
             <ul className="space-y-2.5">
-              {["About", "Blog", "Privacy Policy", "Terms of Service", "Contact"].map((item) => (
+              {["About", "Blog", "Privacy Policy", "Terms of Service"].map((item) => (
                 <li key={item}>
                   <a href="#" className="text-sm text-white/50 hover:text-white transition-colors">{item}</a>
                 </li>
               ))}
+              <li className="text-sm text-white/50">
+                Contact us at: <a href="mailto:info@cleerly.ca" className="hover:text-white transition-colors">info@cleerly.ca</a>
+              </li>
             </ul>
           </div>
         </div>
